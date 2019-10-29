@@ -12,6 +12,7 @@
         <a-button type="primary">Primary</a-button>
         <a-pagination size="small" :total="50" showSizeChanger showQuickJumper />
       </div>
+      <FormDemo />
       <HelloWorld msg="Welcome to Your Vue.js App"/>
     </div>
   </a-locale-provider>
@@ -20,6 +21,7 @@
 <script>
 import zh_CN from 'ant-design-vue/lib/locale-provider/zh_CN'
 import HelloWorld from './components/HelloWorld.vue'
+import FormDemo from './components/FormDemo.vue'
 
 export default {
   name: 'app',
@@ -29,7 +31,8 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    HelloWorld,
+    FormDemo
   }
 }
 </script>
